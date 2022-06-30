@@ -1,0 +1,21 @@
+{
+  "name": "@hideoo/prettier-config",
+  "description": "HiDeoo's Prettier configuration",
+  "homepage": "https://github.com/HiDeoo/prettier-config",
+  "version": "0.0.1",
+  "author": "HiDeoo",
+  "main": "index.json",
+  "license": "MIT",
+  "keywords": [
+    "prettier",
+    "config",
+    "prettier-config"
+  ],
+  "bugs": {
+    "url": "https://github.com/HiDeoo/Prettier-config/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HiDeoo/prettier-config"
+  }
+}
