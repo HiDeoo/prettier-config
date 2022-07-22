@@ -15,7 +15,7 @@
 ### Install
 
 ```shell
-$ pnpm add -D @hideoo/prettier-config
+$ pnpm add -D prettier @hideoo/prettier-config
 ```
 
 ### Configure
