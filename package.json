@@ -4,7 +4,7 @@
   "homepage": "https://github.com/HiDeoo/prettier-config",
   "version": "0.0.1",
   "author": "HiDeoo",
-  "main": "prettierrc.json",
+  "main": ".prettierrc.json",
   "license": "MIT",
   "keywords": [
     "prettier",
