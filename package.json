@@ -2,7 +2,7 @@
   "name": "@hideoo/prettier-config",
   "description": "HiDeoo's Prettier configuration",
   "homepage": "https://github.com/HiDeoo/prettier-config",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "HiDeoo",
   "main": ".prettierrc.json",
   "license": "MIT",
