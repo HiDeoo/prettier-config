@@ -44,6 +44,18 @@ const prettierConfig = {
 module.exports = prettierConfig
 ```
 
+### Run
+
+Add a script in your `package.json` file to run Prettier:
+
+```json
+{
+  "scripts": {
+    "lint": "prettier -c ."
+  }
+}
+```
+
 ## License
 
 Licensed under the MIT License, Copyright © HiDeoo.
