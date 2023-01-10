@@ -20,7 +20,7 @@
   },
   "sideEffects": false,
   "files": [
-    "tsconfig.json"
+    ".prettierrc.json"
   ],
   "keywords": [
     "prettier",
