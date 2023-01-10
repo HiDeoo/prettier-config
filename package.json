@@ -1,21 +1,39 @@
 {
   "name": "@hideoo/prettier-config",
-  "description": "HiDeoo's Prettier configuration",
-  "homepage": "https://github.com/HiDeoo/prettier-config",
   "version": "0.1.1",
-  "author": "HiDeoo",
-  "main": ".prettierrc.json",
   "license": "MIT",
+  "description": "HiDeoo's Prettier configuration",
+  "author": "HiDeoo <github@hideoo.dev> (https://hideoo.dev)",
+  "main": ".prettierrc.json",
+  "scripts": {
+    "lint": "prettier -c --cache .",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "husky": "8.0.3",
+    "lint-staged": "13.1.0",
+    "prettier": "2.8.2"
+  },
+  "packageManager": "pnpm@7.23.0",
+  "publishConfig": {
+    "access": "public"
+  },
+  "sideEffects": false,
+  "files": [
+    "tsconfig.json"
+  ],
   "keywords": [
     "prettier",
     "config",
     "prettier-config"
   ],
-  "bugs": {
-    "url": "https://github.com/HiDeoo/Prettier-config/issues"
-  },
+  "homepage": "https://github.com/HiDeoo/prettier-config",
   "repository": {
     "type": "git",
-    "url": "https://github.com/HiDeoo/prettier-config"
+    "url": "https://github.com/HiDeoo/prettier-config.git"
+  },
+  "bugs": "https://github.com/HiDeoo/prettier-config/issues",
+  "lint-staged": {
+    "**/*": "prettier -w -u --cache"
   }
 }
