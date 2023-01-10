@@ -51,7 +51,7 @@ Add a script in your `package.json` file to run Prettier:
 ```json
 {
   "scripts": {
-    "lint": "prettier -c ."
+    "lint": "prettier -c --cache ."
   }
 }
 ```
