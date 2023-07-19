@@ -28,21 +28,31 @@ Reference the configuration in your `package.json` file:
 }
 ```
 
-Alternatively, you can also extends the configuration through a [configuration file](https://prettier.io/docs/en/configuration.html). This is particularly useful when using some [Prettier plugins](https://prettier.io/docs/en/plugins.html):
+Alternatively, you can also extends the configuration through a [configuration file](https://prettier.io/docs/en/configuration.html). This is particularly useful when using some [Prettier plugins](https://prettier.io/docs/en/plugins.html), e.g. with a `.prettierrc.cjs` file:
 
 ```js
-import baseConfig from '@hideoo/prettier-config'
+const baseConfig = require('@hideoo/prettier-config')
 
 /**
  * @type {import('prettier').Config}
  */
 const prettierConfig = {
   ...baseConfig,
-  plugins: ['prettier-plugin-astro'],
+  overrides: [
+    {
+      files: '*.astro',
+      options: {
+        parser: 'astro',
+      },
+    },
+  ],
+  plugins: [require.resolve('prettier-plugin-astro')],
 }
 
-export default prettierConfig
+module.exports = prettierConfig
 ```
+
+_As of 07/19/2023, Prettier v3 does support [ESM configuration files](https://prettier.io/docs/en/configuration.html#configuration-file) but using an `import` statement will result in [an error](https://github.com/prettier/prettier-vscode/issues/3066) in the VSCode Prettier extension._
 
 ### Run
 
