@@ -46,7 +46,7 @@ const prettierConfig = {
       },
     },
   ],
-  plugins: [require.resolve('prettier-plugin-astro')],
+  plugins: ['prettier-plugin-astro'],
 }
 
 module.exports = prettierConfig
