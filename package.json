@@ -7,14 +7,26 @@
   "main": ".prettierrc.json",
   "scripts": {
     "lint": "prettier -c --cache .",
-    "prepare": "husky install"
+    "format": "prettier -w --cache .",
+    "version": "pnpm changeset version && pnpm i --no-frozen-lockfile"
   },
   "devDependencies": {
-    "husky": "8.0.3",
-    "lint-staged": "13.1.0",
-    "prettier": "3.0.0"
+    "@changesets/changelog-github": "^1.0.1",
+    "@changesets/cli": "^3.0.2",
+    "prettier": "3.9.6"
   },
-  "packageManager": "pnpm@10.18.3",
+  "devEngines": {
+    "runtime": {
+      "name": "node",
+      "version": ">=24",
+      "onFail": "download"
+    },
+    "packageManager": {
+      "name": "pnpm",
+      "version": "12.3.4",
+      "onFail": "download"
+    }
+  },
   "publishConfig": {
     "access": "public"
   },
@@ -32,8 +44,5 @@
     "type": "git",
     "url": "https://github.com/HiDeoo/prettier-config.git"
   },
-  "bugs": "https://github.com/HiDeoo/prettier-config/issues",
-  "lint-staged": {
-    "**/*": "prettier -w -u --cache"
-  }
+  "bugs": "https://github.com/HiDeoo/prettier-config/issues"
 }
