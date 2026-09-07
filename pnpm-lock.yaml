@@ -113,8 +113,8 @@ importers:
         specifier: runtime:>=24
         version: runtime:26.8.1
       prettier:
-        specifier: 3.0.0
-        version: 3.0.0
+        specifier: 3.9.6
+        version: 3.9.6
 
 packages:
 
@@ -250,8 +250,8 @@ packages:
     version: 26.8.1
     hasBin: true
 
-  prettier@3.0.0:
-    resolution: {integrity: sha512-zBf5eHpwHOGPC47h0zrPyNn+eAEIdEzfywMoYn2XPi0P44Zp0tSq64rq0xAREh4auw2cJZHo9QUob+NqCQky4g==}
+  prettier@3.9.6:
+    resolution: {integrity: sha512-OpN0zzVdiaiAhxpuuj5efpIS4sY9j7bY6uR5mnj5yPzGkdkjNKSJeUThPb60Jw29QuAZgA4o+/iB49kFiaBX6g==}
     engines: {node: '>=14'}
     hasBin: true
 
@@ -259,4 +259,4 @@ snapshots:
 
   node@runtime:26.8.1: {}
 
-  prettier@3.0.0: {}
+  prettier@3.9.6: {}
